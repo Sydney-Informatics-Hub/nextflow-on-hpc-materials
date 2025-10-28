@@ -2,3 +2,4 @@ assets/work
 assets/runInfo
 assets/.nextflow*
 data/ref/Hg38-chr20-22.tar.gz
+assets/index-reference-fasta-nf
