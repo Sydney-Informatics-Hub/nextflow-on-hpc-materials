@@ -1,0 +1,3 @@
+NA12877_markdup.bam
+NA12878_markdup.bam
+NA12889_markdup.bam
