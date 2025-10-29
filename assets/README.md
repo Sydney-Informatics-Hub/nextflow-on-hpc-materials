@@ -46,4 +46,26 @@ We only used chromosomes 20-22 so subset the reference accordingly using:
 bash subset-ref.sh
 ```
 
+## Clone and run Parabricks pipeline for genome alignment
 
+We used the Parabricks Genomics Nextflow pipeline to generate GPU-accelerated alignments.
+
+Clone the repository:
+
+```
+git clone https://github.com/Sydney-Informatics-Hub/Parabricks-Genomics-nf.git
+```
+
+Run the Parabricks Nextflow on Gadi:
+
+```
+qsub align-fq.sh
+```
+
+## Subset alignments
+
+After generating the alignments, subset each BAM file to 1500 reads per sample using the `subset-bam.sh` script.
+
+```
+qsub -v ARGS="-r -f bam_list.txt" /scratch/ad78/gs5517/nextflow-on-hpc-materials/assets/subset-bam.sh
+```
