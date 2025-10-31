@@ -4,3 +4,11 @@ assets/.nextflow*
 assets/index-reference-fasta-nf
 assets/Parabricks-Genomics-nf
 data/ref/Hg38.subsetchr20-22.fasta*
+day1/sarek/*
+day1/config-demo-nf/*
+day1/work/*
+day1/results/*
+day1/.nextflow*
+day1/gadi*
+day2/work/*
+day2/results/*
