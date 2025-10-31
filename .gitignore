@@ -9,18 +9,18 @@ results/
 .gadi*
 
 # --- Day 1 ---
-day1/work/
-day1/results/
-day1/.nextflow*
-day1/gadi*
-day1/sarek/
-day1/config-demo-nf/
+part1/work/
+part1/results/
+part1/.nextflow*
+part1/gadi*
+part1/sarek/
+part1/config-demo-nf/
 
 # --- Day 2 ---
-day2/work/
-day2/results/
-day2/.nextflow*
-day2/gadi*
+part2/work/
+part2/results/
+part2/.nextflow*
+part2/gadi*
 
 # --- Unzipped ref data ---
 data/ref/Hg38.subsetchr20-22.fasta*
