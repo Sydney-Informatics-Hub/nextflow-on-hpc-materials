@@ -3,3 +3,4 @@ assets/runInfo
 assets/.nextflow*
 assets/index-reference-fasta-nf
 assets/Parabricks-Genomics-nf
+data/ref/Hg38.subsetchr20-22.fasta*
