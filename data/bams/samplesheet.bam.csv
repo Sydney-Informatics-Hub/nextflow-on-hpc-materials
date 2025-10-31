@@ -1,0 +1,4 @@
+patient,sample,bam,bai
+NA12877,test_sample1,../data/bams/NA12877_chr20-22.bam,../data/bams/NA12877_chr20-22.bam.bai
+NA12878,test_sample2,../data/bams/NA12878_chr20-22.bam,../data/bams/NA12878_chr20-22.bam.bai
+NA12889,test_sample3,../data/bams/NA12889_chr20-22.bam,../data/bams/NA12889_chr20-22.bam.bai
