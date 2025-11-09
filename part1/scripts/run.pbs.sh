@@ -1,10 +1,10 @@
 #!/bin/bash
 
-module load nextflow
+module load nextflow/24.04.5
 module load singularity
 
 nextflow run sarek/main.nf \
-    --input ../data/bams/samplesheet.bam.csv \
+    --input ../data/bams/samplesheet.csv \
     --step markduplicates \
     --skip_tools baserecalibrator,mosdepth,samtools \
     --outdir results \
