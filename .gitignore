@@ -24,6 +24,7 @@ part2/gadi*
 
 # --- Unzipped ref data ---
 data/ref/Hg38.subsetchr20-22.fasta*
+data/ref/Hg38.subsetchr20-22.dict
 
 # --- Generated assets ---
 assets/work/
