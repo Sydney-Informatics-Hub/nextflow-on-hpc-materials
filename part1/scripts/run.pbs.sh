@@ -14,5 +14,5 @@ nextflow run sarek/main.nf \
     --outdir results \
     --no_intervals true \
     --igenomes_ignore true \
-    -c config/setonix.config,config/custom.config \
+    -c config/gadi.config,config/custom.config \
     -resume
