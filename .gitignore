@@ -7,6 +7,7 @@ work/
 results/
 .nextflow*
 .gadi*
+simg/
 
 # --- Day 1 ---
 part1/work/
