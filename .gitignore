@@ -8,6 +8,7 @@ results/
 .nextflow*
 .gadi*
 /singularity/
+simg/
 
 # --- Day 1 ---
 part1/work/
