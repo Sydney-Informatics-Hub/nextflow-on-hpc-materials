@@ -13,6 +13,7 @@ git clone https://github.com/Sydney-Informatics-Hub/config-demo-nf.git
 
 # Setup singularity cachedir
 cd ..
-cp -r /scratch/vp91/singularity .
+cp /scratch/vp91/singularity.tar .
+tar -xf singularity.tar
 
 echo "Setup complete"
