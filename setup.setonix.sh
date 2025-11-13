@@ -13,6 +13,10 @@ git clone https://github.com/Sydney-Informatics-Hub/config-demo-nf.git
 
 # Setup singularity cachedir
 cd ..
-cp -r /scratch/courses01/singularity .
+cp /scratch/courses01/singularity.tar .
+tar -xf singularity.tar
+
+# Ensure ~/.Xauthority exists for fastqc example
+mkdir -p mkdir ~/.Xauthority
 
 echo "Setup complete"

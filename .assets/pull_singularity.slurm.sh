@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --account=courses01
+#SBATCH --account=pawsey1227
 #SBATCH --job-name=fastqc
 #SBATCH --partition=work
 #SBATCH --nodes=1
@@ -8,8 +8,10 @@
 #SBATCH --mem=2GB
 #SBATCH --time=05:00:00
 
+set -euo pipefail
+
 module load singularity/4.1.0-slurm
-SINGULARITY_CACHEDIR=/scratch/courses01/singularity
+SINGULARITY_CACHEDIR=/scratch/pawsey1227/training/nf4hpc/singularity
 mkdir -p ${SINGULARITY_CACHEDIR}
 
 singularity pull ${SINGULARITY_CACHEDIR}/quay.io-biocontainers-fastqc-0.12.1--hdfd78af_0.img docker://quay.io/biocontainers/fastqc:0.12.1--hdfd78af_0
@@ -27,3 +29,6 @@ singularity pull ${SINGULARITY_CACHEDIR}/quay.io-biocontainers-fastp-1.0.1--heae
 singularity pull ${SINGULARITY_CACHEDIR}/quay.io-biocontainers-gatk4-4.6.2.0--py310hdfd78af_1.img docker://quay.io/biocontainers/gatk4:4.6.2.0--py310hdfd78af_1
 singularity pull ${SINGULARITY_CACHEDIR}/quay.io-biocontainers-mulled-v2-fe8faa35dbf6dc65a0f7f5d4ea12e31a79f73e40-1bd8542a8a0b42e0981337910954371d0230828e-0.img docker://quay.io/biocontainers/mulled-v2-fe8faa35dbf6dc65a0f7f5d4ea12e31a79f73e40:1bd8542a8a0b42e0981337910954371d0230828e-0
 singularity pull ${SINGULARITY_CACHEDIR}/quay.io-biocontainers-multiqc-1.19--pyhdfd78af_0.img docker://quay.io/biocontainers/multiqc:1.19--pyhdfd78af_0
+
+cd $(dirname ${SINGULARITY_CACHEDIR})
+tar -cvf singularity.tar singularity/

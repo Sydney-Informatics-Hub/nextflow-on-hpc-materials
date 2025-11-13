@@ -3,12 +3,14 @@
 #PBS -l mem=2GB
 #PBS -l jobfs=20GB
 #PBS -q copyq
-#PBS -P vp91
+#PBS -P ad78
 #PBS -l walltime=05:00:00
-#PBS -l storage=scratch/vp91
+#PBS -l storage=scratch/ad78
+
+set -euo pipefail
 
 module load singularity
-SINGULARITY_CACHEDIR=/scratch/vp91/singularity
+SINGULARITY_CACHEDIR=/scratch/ad78/training/nf4hpc/singularity
 mkdir -p ${SINGULARITY_CACHEDIR}
 
 singularity pull ${SINGULARITY_CACHEDIR}/quay.io-biocontainers-fastqc-0.12.1--hdfd78af_0.img docker://quay.io/biocontainers/fastqc:0.12.1--hdfd78af_0
@@ -26,3 +28,6 @@ singularity pull ${SINGULARITY_CACHEDIR}/quay.io-biocontainers-fastp-1.0.1--heae
 singularity pull ${SINGULARITY_CACHEDIR}/quay.io-biocontainers-gatk4-4.6.2.0--py310hdfd78af_1.img docker://quay.io/biocontainers/gatk4:4.6.2.0--py310hdfd78af_1
 singularity pull ${SINGULARITY_CACHEDIR}/quay.io-biocontainers-mulled-v2-fe8faa35dbf6dc65a0f7f5d4ea12e31a79f73e40-1bd8542a8a0b42e0981337910954371d0230828e-0.img docker://quay.io/biocontainers/mulled-v2-fe8faa35dbf6dc65a0f7f5d4ea12e31a79f73e40:1bd8542a8a0b42e0981337910954371d0230828e-0
 singularity pull ${SINGULARITY_CACHEDIR}/quay.io-biocontainers-multiqc-1.19--pyhdfd78af_0.img docker://quay.io/biocontainers/multiqc:1.19--pyhdfd78af_0
+
+cd $(dirname ${SINGULARITY_CACHEDIR})
+tar -cvf singularity.tar singularity/
