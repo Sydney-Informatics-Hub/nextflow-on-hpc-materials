@@ -16,4 +16,14 @@ cd ..
 cp /scratch/vp91/singularity.tar .
 tar -xf singularity.tar
 
+# Fix potential issues with default project
+set +e
+PROJISVP91=$(grep -c "^PROJECT.*vp91$" ~/.config/gadi-login.conf)
+set -e
+if [ "${PROJISVP91}" == "0" ]
+then
+    sed -i -e "s/\(PROJECT \)\w*/\1vp91/" ~/.config/gadi-login.conf
+    echo "IMPORTANT: YOUR DEFAULT PROJECT HAS BEEN CHANGED TO 'vp91'. PLEASE LOG OUT AND BACK IN AGAIN TO REFRESH YOUR SESSION."
+fi
+
 echo "Setup complete"

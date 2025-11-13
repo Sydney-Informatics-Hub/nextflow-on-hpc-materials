@@ -16,4 +16,7 @@ cd ..
 cp /scratch/courses01/singularity.tar .
 tar -xf singularity.tar
 
+# Ensure ~/.Xauthority exists for fastqc example
+mkdir -p mkdir ~/.Xauthority
+
 echo "Setup complete"
