@@ -2,9 +2,9 @@
 
 This repository contains input and reference datasets to be used in the 2025 Nextflow on HPC workshop. 
 
-## For partiticpants 
+## For participants 
 
-TODO add instructions for participants to download data in the workshop.
+Setup and download instructions are available on the rendered documentation under [Setup the workspace](https://sydney-informatics-hub.github.io/nextflow-hpc-workshop/part1/01_0_intro/#102-setup-the-workspace)
 
 ## For contributors 
 
@@ -24,6 +24,3 @@ We've provided fastq and bam files for 3 [Platinum Genome](https://sapac.illumin
 
 The `part2/` folder contains all files in the correct structure to use at the
 beginning of the workshop.
-
-The `_scripts` folder contains the scripts and outputs for certain steps
-in case participants require a copy a file to proceed.
