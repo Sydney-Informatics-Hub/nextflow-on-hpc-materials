@@ -9,6 +9,7 @@ results/
 .gadi*
 /singularity/
 simg/
+singularity
 
 # --- Day 1 ---
 part1/work/
@@ -22,7 +23,9 @@ part1/config-demo-nf/
 part2/work/
 part2/results/
 part2/.nextflow*
-part2/gadi*
+part2/runInfo
+part2/singularity
+part2/run.sh
 
 # --- Unzipped ref data ---
 data/ref/Hg38.subsetchr20-22.fasta*

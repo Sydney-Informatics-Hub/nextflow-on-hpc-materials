@@ -1,9 +1,0 @@
-name	status	exit	duration	realtime	cpus	%cpu	memory	%mem	rss
-FASTQC (fastqc on NA12889)	COMPLETED	0	34.4s	4s	1	119.3%	-	0.1%	192.1 MB
-ALIGN (1)	COMPLETED	0	34.2s	2s	1	81.6%	-	0.0%	99.4 MB
-FASTQC (fastqc on NA12877)	COMPLETED	0	34.4s	4s	1	141.0%	-	0.1%	232.3 MB
-FASTQC (fastqc on NA12878)	COMPLETED	0	34.3s	4s	1	134.5%	-	0.1%	254.1 MB
-GENOTYPE (1)	COMPLETED	0	1m 10s	42s	1	141.4%	-	0.6%	1.5 GB
-JOINT_GENOTYPE (1)	COMPLETED	0	34.8s	15s	1	157.3%	-	0.2%	449.5 MB
-STATS (1)	COMPLETED	0	15s	1s	1	95.4%	-	0.0%	2 MB
-MULTIQC	COMPLETED	0	39.8s	5.6s	1	75.1%	-	0.0%	112 MB

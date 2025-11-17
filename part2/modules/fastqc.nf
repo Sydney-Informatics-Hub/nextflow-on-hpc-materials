@@ -13,7 +13,7 @@ process FASTQC {
     script:
     """
     mkdir -p "fastqc_${sample_id}"
-    fastqc -t $task.cpus --outdir "fastqc_${sample_id}" --format fastq $reads_1 $reads_2
+    fastqc -t 1 --outdir "fastqc_${sample_id}" --format fastq $reads_1 $reads_2
     """
 
 }
