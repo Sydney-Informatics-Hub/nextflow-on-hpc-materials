@@ -7,6 +7,7 @@ work/
 results/
 .nextflow*
 .gadi*
+/singularity/
 simg/
 singularity
 
